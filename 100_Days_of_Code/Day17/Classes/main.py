@@ -1,5 +1,7 @@
 class Car:
-    def __init__(self):
-        
+    def __init__(self, seats):
+        self.seats = seats
 
-user_1 = User()
+car_1 = Car(5)
+
+print(car_1.seats)
