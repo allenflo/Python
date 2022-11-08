@@ -1,8 +1,8 @@
-user = {
-    'name': 'Allen',
-    'age': 5006,
-    'can_swim' : False
-}
+def say_hello(name):
+    print(f"Hello {name}")
 
-for item in user.items():
-    print(item)
+name = input('What is your name?')
+
+say_hello(name)
+
+
