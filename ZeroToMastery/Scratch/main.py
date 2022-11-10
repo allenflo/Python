@@ -1,8 +1,12 @@
-def say_hello(name):
-    print(f"Hello {name}")
+a = 1
 
-name = input('What is your name?')
+def parent():
+    a=10
+    def confusion():
+        return a
+    return confusion()
 
-say_hello(name)
+print(parent())
+print(a)
 
 
