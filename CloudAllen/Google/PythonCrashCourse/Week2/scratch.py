@@ -1,20 +1,18 @@
-def format_name(first_name, last_name):
-    if len(first_name) > 0 and len(last_name) > 0:
-        return("Name: " + last_name + ", " + first_name)
+def print_prime_factors(number):
+  # Start with two, which is the first prime
+  factor = 2
+  # Keep going until the factor is larger than the number
+  while factor <= number:
+    # Check if factor is a divisor of number
+    if number % factor == number:
+      # If it is, print it and divide the original number
+      print(factor)
+      number = number / factor
+    else:
+      # If it's not, increment the factor by one
+      factor += 1
+  return "Done"
 
-    elif len(first_name) == 0 and len(last_name) > 0:
-        return("Name: " + last_name)
-
-print(format_name("Ernest", "Hemingway"))
-# Should return the string "Name: Hemingway, Ernest"
-
-print(format_name("", "Madonna"))
-# Should return the string "Name: Madonna"
-
-print(format_name("Voltaire", ""))
-# Should return the string "Name: Voltaire"
-
-print(format_name("", ""))
-# Should return an empty string
-
-
+print_prime_factors(100)
+# Should print 2,2,5,5
+# DO NOT DELETE THIS COMMENT
